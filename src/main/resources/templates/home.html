@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- <style>
+        .container{
+            margin: auto;
+            width: 50%;
+            padding: 30px;
+            background: #e2e2e2;
+        }
+    </style> -->
+
+</head>
+<body>
+    <div class=" bg-gray-200 w-1/2 flex flex-col space-y-3 justify-center items-center p-4 mx-auto">
+        <h1 class="text-2xl font-bold" data-th-text="${name}">Wellcom to home page</h1>
+        <p class=" text-xl text-gray-700"> Youtube channel : <span data-th-text="${Youtube}"></span> </p>
+        <p>Github Ripo Link : <span th:text="${githubRepo}"></span> </p>
+        <a data-th-href="${githubRepo}"> Click here to open</a>
+        <p class="text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium enim culpa tenetur commodi. Hic ducimus dicta facilis quia! Amet quaerat cupiditate esse numquam minima facilis, reprehenderit saepe. Minima asperiores id voluptatum ipsa tempora, culpa error architecto animi dolores vel, optio fugiat quis, sint quidem? Ullam perspiciatis repellat voluptates magnam earum?</p>
+
+        <div class="text-center">  
+            <button class="px-3 py-2 rounded bg-blue-700 text-white hover:bg-blue-400">Click here</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
